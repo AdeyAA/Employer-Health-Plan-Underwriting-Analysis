@@ -30,7 +30,7 @@ Then I began cleaning the data, and I summed up how many rows or employees we ha
 
 Age Distribution
 
-I calculated the average age amongst the group. Then I grouped employees into age bins. 18-29, 20-39, 40-49, 50-59, 60+. Then, in the summary sheet I calculated the percentage of employees that fit into each bin using these formulas, in order to see the age distribution. And I want to flag if 25-30% of individuals in the group are 55+ years old. This is because claims variance increases, so the alternate funding risks shift to the employer:
+I calculated the average age amongst the group. Then I grouped employees into age bins. 18-29, 30-39, 40-49, 50-59, 60+. Then, in the summary sheet I calculated the percentage of employees that fit into each bin using these formulas, in order to see the age distribution. And I want to flag if 25-30% of individuals in the group are 55+ years old. This is because claims variance increases, so the alternate funding risks shift to the employer:
 
 `=(COUNTIFS(Data!A:A,">=18",Data!A:A,"<30")) / $B$1`
 
