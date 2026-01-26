@@ -4,7 +4,6 @@ This project simulates the alternate funding underwriting evaluation process for
 
 The goal is to determine whether a single-company employee group exhibits sufficient claims predictability, demographic balance, and financial stability to be considered eligible for an alternate-funded health plan (e.g., Kaiser Permanente).
 
-
 # Dataset Description
 The dataset represents employees working for the same company. Each row corresponds to one employee. The dataset includes 650 rows of employees.
 
@@ -95,9 +94,11 @@ Alternate funding is viable only when all three align. When costs are reasonable
 # Step 6: Cost Distribution & Risk 
 
 In this step, I analyzed the distribution of annual expenses.
-I created a histogram using pivot tables using expense ranges in bins, and employee counts per range.
-The visualization revealed whether most employees cluster near the mean. And whether a small number of high-cost claims make up the total spend of the organization. Because we have a long right tail this could indicate to us a very high risk.
+I created a histogram using a pivot table using expense ranges in bins, and employee counts per range.
+The visualization revealed whether most employees cluster near the mean. And whether a small number of high-cost claims make up the total spend of the organization. This distribution of expenses could indicate to us a very high risk because of the concentration near the end of the chart.
 
+
+<img width="431" height="259" alt="Screenshot 2026-01-26 at 10 01 56 AM" src="https://github.com/user-attachments/assets/1297c872-12b7-4c7f-9102-c89ca6ba0cec" />
 
 
 # Summary of Key Findings
