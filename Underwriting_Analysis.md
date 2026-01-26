@@ -16,7 +16,7 @@ The dataset represents employees working for the same company. Each row correspo
     Expenses - Annual healthcare claims
     Premium - Annual premium contribution
 
-The dataset was dowloaded from kaggle and loaded into Excel as a structured table named Data, enabling consistent formulas, PivotTables, and dashboards.
+The dataset was downloaded from Kaggle and loaded into Excel as a structured table named Data, enabling consistent formulas, PivotTables, and dashboards.
 
 <img width="474" height="510" alt="Screenshot 2026-01-23 at 7 08 14 PM" src="https://github.com/user-attachments/assets/0508503c-78d7-4984-a62a-ae74e9ecf225" />
 ...
@@ -30,7 +30,7 @@ Then I began cleaning the data, and I summed up how many rows or employees we ha
 
 Age Distribution
 
-I calculated the average age amongst the group. Then I grouped employees into age bins. 18-29, 30-39, 40-49, 50-59, 60+. Then, in the summary sheet I calculated the percentage of employees that fit into each bin using these formulas, in order to see the age distribution. And I want to flag if 25-30% of individuals in the group are 55+ years old. This is because claims variance increases, so the alternate funding risks shift to the employer:
+I calculated the average age amongst the group. Then I grouped employees into age bins. 18-29, 30-39, 40-49, 50-59, 60+. Then, in the summary sheet, I calculated the percentage of employees that fit into each bin using these formulas, in order to see the age distribution. And I want to flag if 25-30% of individuals in the group are 55+ years old. This is because claims variance increases, so the alternate funding risks shift to the employer:
 
 `=(COUNTIFS(Data!A:A,">=18",Data!A:A,"<30")) / $B$1`
 
@@ -107,7 +107,7 @@ The visualization revealed whether most employees cluster near the mean. And whe
     -Total Employees: 650
     -Average Age: 39.3 years
     -Employees Aged 55+: 18.3%
-The age distribution is suited for alternate funding. Groups when 25-30% or more of members are age 55+ are flagged because of higher claim severity and unpredictablity. The specific group analyzed here is below that threshold, indicating balance and manageable age-related risk.
+The age distribution is suited for alternate funding. Groups with 25-30% or more of members who are age 55+ are flagged because of higher claim severity and unpredictability. The specific group analyzed here is below that threshold, indicating balance and manageable age-related risk.
 
 <img width="545" height="289" alt="Screenshot 2026-01-26 at 8 55 01 AM" src="https://github.com/user-attachments/assets/d5896bda-39ca-4522-bab8-55261f79a96c" />
 
@@ -128,14 +128,14 @@ Total & Monthly Claims
 These numbers make up the baseline medical cost burden that the employer must fund.
 
 5. Loss Ratio
-     -Oberseved loss ratio: 50.18
-This dataset shows claims exceeding premium contributions by an big margin, letting us know that premium funding is severly insufficient to cover medical expenses.
+     -Observed loss ratio: 50.18
+We observed a loss ratio of 5018%. This dataset shows claims exceeding premium contributions by a big margin, letting us know that premium funding is severely insufficient to cover medical expenses.
 
 6. Predictability
-     -Observed coefficent of variation is 0.91
+     -Observed coefficient of variation is 0.91
 
-   A coefficient of variation near 1 indicted irregular claims. The level of predicitablity isn't suitable for alternate funding, the employer would have to assume claim risk.
+   A coefficient of variation near 1 indicated irregular claims. The level of predictability isn't suitable for alternate funding, the employer would have to assume claim risk.
 
 
-The final eligibilty conclusion, was that this group was not eligible for alternate funding. The group fails two critical reqiurements becasue they have an unsustaincable loss ratio and high claims unpredictablity. These tell us that claims are too large and unperdictable fot the employer to be able to assume risk umfer and alternate-funded health plan. This group would be better suited for a fully-insured plan because the risk and unpredictablilty of claims would be transfereed to the carrier, this would give the employer a chance with predictable costs and financial stability.
+The final eligibility conclusion was that this group was not eligible for alternate funding. The group fails two critical reqiurements becasue they have an unsustainable loss ratio and high claims unpredictability. These tell us that claims are too large and unperdictable fot the employer to be able to assume risk under an alternate-funded health plan. This group would be better suited for a fully-insured plan because the risk and unpredictability of claims would be transferred to the carrier, which would give the employer a chance at predictable costs and financial stability.
 
