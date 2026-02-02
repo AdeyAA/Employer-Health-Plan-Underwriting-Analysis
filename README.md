@@ -1,5 +1,5 @@
 # Project Overview
-An Excel-based underwriting analysis to evaluate employer eligibility for health plans. The analysis looks at employee demographic risk, geographic eligibility, health risk proxies, and financial performance to assess underwriting viability and project financial outcomes under multiple scenarios. 
+An Excel-based underwriting analysis to evaluate employer eligibility for health plans. The analysis looks at employee demographic risk, geographic eligibility, health risk proxies, and financial performance to assess underwriting viability. 
 
 # Problem Statement
 Employers considering alternative-funded health plans assume greater financial risk. Carriers require demographic stability, predictable claims, and acceptable risk concentration. This project simulates the underwriting pre-screening process used to determine eligibility and financial feasibility.
